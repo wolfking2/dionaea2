@@ -752,11 +752,11 @@ class SMB_Negociate_Protocol_Response(Packet):
         ConditionalField(StrLenField("EncryptionKey", b'',length_from=lambda x: 0),
                          lambda x: not x.Capabilities & CAP_EXTENDED_SECURITY),
         ConditionalField(UnicodeNullField(
-            "OemDomainName", "WORKGROUP"), lambda x: not x.Capabilities & CAP_EXTENDED_SECURITY),
+            "OemDomainName", "BACKGROUP"), lambda x: not x.Capabilities & CAP_EXTENDED_SECURITY),
         # In [MS-SMB].pdf page 49,
         # "ServerName" field needed for case without CAP_EXTENDED_SECURITY
         ConditionalField(UnicodeNullField(
-            "ServerName", "HOMEUSER-3AF6FE"), lambda x: not x.Capabilities & CAP_EXTENDED_SECURITY),
+            "ServerName", "PRINTERS-4fA63E"), lambda x: not x.Capabilities & CAP_EXTENDED_SECURITY),
         # with CAP_EXTENDED_SECURITY
         ConditionalField(StrLenField("ServerGUID", b'\x0B\xFF\x65\x38\x54\x7E\x6C\x42\xA4\x3E\x12\xD2\x11\x97\x16\x44',
                                      length_from=lambda x: 16), lambda x: x.Capabilities & CAP_EXTENDED_SECURITY),

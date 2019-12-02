@@ -94,26 +94,26 @@ RESPONSE = {
 
     # -- 200's --
     "cmd_ok":                             "200 Command OK",
-    "type_set_ok":                        "200 Type set to {mode}.",
-    "entering_port_mode":                 '200 PORT OK',
-    "sys_status_or_help_reply":           '211 System status reply',
+    "type_set_ok":                        "200 Type is set to {mode}.",
+    "entering_port_mode":                 '200 PORT is OK',
+    "sys_status_or_help_reply":           '211 System statu reply',
     "dir_status":                         '212 %s',
     "file_status":                        '213 {value}',
     #"help_msg":                           '214 help: %s',
     "name_sys_type":                      '215 UNIX Type: L8',
-    "welcome_msg":                        "220 Welcome to the ftp service",
-    "svc_ready_for_new_user":             '220 Service ready',
-    "goodbye_msg":                        '221 Goodbye.',
+    "welcome_msg":                        "220 Welcome to vsftp service",
+    "svc_ready_for_new_user":             '220 Service is ready .',
+    "goodbye_msg":                        '221 Goodbye !.',
     "data_cnx_open_no_xfr_in_progress":   '225 data connection open, no transfer in progress',
-    "closing_data_cnx":                   '226 Abort successful',
-    "txfr_complete_ok":                   '226 Transfer Complete.',
-    "entering_pasv_mode":                 '227 Entering Passive Mode ({host}).',
+    "closing_data_cnx":                   '226 Abort is successful',
+    "txfr_complete_ok":                   '226 Transfer is Complete.',
+    "entering_pasv_mode":                 '227 Entering in Passive Mode ({host}).',
     # where is epsv defined in the rfc's?
     #"entering_epsv_mode":                 '229 Entering Extended Passive Mode (|||%s|).',
-    "usr_logged_in_proceed":              '230 User logged in, proceed',
-    "guest_logged_in_proceed":            '230 Anonymous login ok, access restrictions apply.',
+    "usr_logged_in_proceed":              '230 User logged in, processed',
+    "guest_logged_in_proceed":            '230 Anonymous auth was ok, restrictions apply.',
     #i.e. CWD completed ok
-    "req_file_actn_completed_ok":         '250 Requested File Action Completed OK',
+    "req_file_actn_completed_ok":         '250 Requested File Action is Completed OK',
     "pwd_reply":                          "257 \"{cwd}\"",
 
     # -- 300's --
@@ -131,12 +131,12 @@ RESPONSE = {
     "syntax_error_user_requires_arg":     "500 Syntax error: USER requires an argument",
     "syntax_err_in_args":                 '501 syntax error in argument(s) {command}.',
     "cmd_not_implmntd":                   "502 Command '{command}' not implemented",
-    "bad_cmd_seq_pass_after_user":        "503 Incorrect sequence of commands: PASS required after USER",
-    "cmd_not_implmntd_for_param":         "504 Not implemented for parameter '{param}'.",
-    "not_logged_in":                      '530 Please login with USER and PASS.',
-    "auth_failure":                       '530 Sorry, Authentication failed.',
-    "file_not_found":                     '550 {filename}: No such file or directory.',
-    "permission_denied":                  '550 {path}: Permission denied.',
+    "bad_cmd_seq_pass_after_user":        "503 Incorrect sequences of commands: PASS required after USER",
+    "cmd_not_implmntd_for_param":         "504 Not implement for parameters '{param}'.",
+    "not_logged_in":                      '530 Please login with username and password.',
+    "auth_failure":                       '530 Sorry, Authentication was failed.',
+    "file_not_found":                     '550 {filename}: No such file or directory .',
+    "permission_denied":                  '550 {path}: Permission denied .',
 }
 
 
