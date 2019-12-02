@@ -756,7 +756,7 @@ class httpd(connection):
                 self.file.close()
 
     def list_directory(self, path):
-        """Helper to produce a directory listing (absent index.html).
+        """Helper to produce a List Documents (absent index.html).
 
         Return value is either a file object, or None (indicating an
         error).  In either case, the headers are sent, making the
@@ -789,8 +789,8 @@ class httpd(connection):
             r = []
             displaypath = html.escape(self.header.path)
             r.append('<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">')
-            r.append("<html>\n<title>Directory listing for %s</title>\n" % displaypath)
-            r.append("<body>\n<h2>Directory listing for %s</h2>\n" % displaypath)
+            r.append("<html>\n<title>List Documents for %s</title>\n" % displaypath)
+            r.append("<body>\n<h2>List Documents for %s</h2>\n" % displaypath)
             r.append("<hr>\n<ul>\n")
             r.append('<li><a href="../">../</a>\n')
 
